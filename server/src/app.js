@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -11,8 +12,12 @@ app.use(
   })
 );
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "..", "public")));
 
 // Routers
 app.use("/planets", planetsRouter);
+app.get("/", (req, res) => {
+  res.send(path.join(__dirname, "..", "public", "index.html"));
+});
 
 module.exports = app;
