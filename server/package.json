@@ -1,12 +1,11 @@
 {
-  "name": "server",
+  "name": "nasa-project-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NASA Mission Control API",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "watch": "nodemon src/server.js",
-    "command": "echo Hello World!"
+    "watch": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
