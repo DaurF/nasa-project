@@ -18,7 +18,7 @@ const launchesSchema = mongoose.Schema({
     required: true,
   },
   target: {
-    type: mongoose.ObjectId,
+    type: String,
     required: true,
   },
   customers: [String],
